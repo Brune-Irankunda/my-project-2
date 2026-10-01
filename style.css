@@ -235,3 +235,239 @@ body {
     text-decoration: none;
     font-size: 18px;
 }
+
+.product-section {
+    padding: 0 24px;
+    /* margin: 0 16px; */
+}
+
+.section-header p {
+    margin: 16px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.product-card {
+    min-width: 0;
+}
+
+.product-card figure {
+    position: relative;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    filter: contrast(135%) brightness(95%) saturate(60%) sepia(10%);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-info {
+    padding: 8px 0 20px;
+}
+
+.product-info h2 {
+    margin:0, 0 6px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.product-price {
+    margin: 0;
+    font-weight: 700;
+}
+
+.product-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    background:#000000;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.product-price-raised {
+ color: #f44336;
+}
+
+.product-card-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px;
+    border: none;
+    background: #000000;
+    color: #ffffff;
+    opacity: 0;
+    cursor: pointer;
+    transform: opacity 0.2s ease
+}
+
+.product-card-btn:hover{
+    opacity: 1;
+}
+
+.product-card-btn:hover {
+    background: #333333;
+}
+ {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background: #f1f1f1;
+  color: #000;
+}
+ 
+/* ---------- Subscribe section ---------- */
+.subscribe {
+  background: #000;
+  color: #fff;
+  padding: 64px 20px 60px;
+}
+ 
+.subscribe h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0 0 24px;
+}
+ 
+.subscribe p {
+  font-size: 18px;
+  margin: 0 0 24px;
+}
+ 
+.subscribe input {
+  width: 100%;
+  padding: 14px 11px;
+  font-size: 18px;
+  font-family: inherit;
+  border: none;
+  margin-bottom: 18px;
+}
+ 
+.btn-subscribe {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+}
+ 
+.btn-subscribe:hover {
+  background: #d63a2f;
+}
+ 
+/* ---------- Footer columns ---------- */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0 30px;
+  background: #f1f1f1;
+}
+ 
+.column {
+  padding: 0 16px 0 0;
+}
+ 
+.contact { width: 33%; text-align: center; padding-right: 0; }
+.about   { width: 33%; text-align: center; }
+.store   { width: 33%; }
+ 
+.column h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0 16px;
+}
+ 
+.column p,
+.column a {
+  margin: 0 0 14px;
+}
+ 
+/* Contact form */
+.contact input {
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 15px;
+}
+ 
+.btn-send {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+ 
+.btn-send:hover {
+  background: #333;
+}
+ 
+/* About links */
+.about a {
+  display: block;
+  color: #000;
+  text-decoration: underline;
+}
+ 
+/* Store */
+.store i {
+  margin-right: 4px;
+}
+ 
+.store .accept {
+  margin-top: 30px;
+}
+ 
+.social {
+  font-size: 24px;
+  margin-top: 20px;
+}
+ 
+.social i {
+  margin-right: 2px;
+}
+ 
+/* ---------- Bottom bar ---------- */
+.powered {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 24px;
+}
+ 
+.powered a {
+  color: #fff;
+}
+ 
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+  .contact, .about, .store {
+    width: 100%;
+    padding: 0 16px;
+    margin-bottom: 30px;
+  }
+}
+ 
